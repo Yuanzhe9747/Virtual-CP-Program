@@ -6,33 +6,6 @@ Introduction
 
 This script is a data processing and analysis tool, primarily designed for handling specific formats of CSV files. The tool can read data from the file, apply particular formulas, flip coordinates, identify missing data points, and visualize the processed data.
 
-Pre-requisites Before Using
-Installing Anaconda
-1.1. Visit the official website of Anaconda: https://www.anaconda.com/products/distribution
-1.2. Depending on your operating system, choose the appropriate version (Windows, macOS, or Linux) for download.
-1.3. Double-click the downloaded installer and follow the installation prompts.
-
-Opening Anaconda Navigator
-2.1. After the installation is complete, find and launch Anaconda Navigator from your applications list.
-2.2. On the main interface of Anaconda Navigator, you'll see several applications such as Jupyter Notebook, Spyder, and more.
-
-Launching Jupyter Notebook
-3.1. On the main interface of Anaconda Navigator, click on the Launch button for Jupyter Notebook.
-3.2. Jupyter Notebook will open in your default browser, presenting you with the file directory of your computer.
-
-Creating a New Notebook
-4.1. In the top-right corner of Jupyter Notebook, click on New and then select Python 3.
-4.2. This will open a blank notebook in a new tab.
-
-If you already have the code I provided, simply open the code named "VirtualCP.ipynb" and run it directly. Ensure that your Python environment has the following libraries installed:
-
-numpy
-pandas
-matplotlib
-seaborn
-logging
-(Note: these are automatically installed in my code.) Adjust the file path filename in the script to point to your CSV file. The path in the code, C:/Users/TP/Documents/CQ6248.1-01.csv, refers to the file named CQ6248.1-01.csv located in Documents on the C drive.
-
 Main Features of the First Segment of the Code:
 Loading Data (load_data function)
 
