@@ -1,0 +1,85 @@
+用户手册
+简介
+该脚本是一个数据处理和分析工具，主要用于处理特定格式的 CSV 文件。该工具可以从文件中读取数据，应用特定公式，翻转坐标，查找缺失的数据点，并可视化处理后的数据。
+
+使用前准备
+1. 安装 Anaconda
+1.1. 访问Anaconda的官方网站：https://www.anaconda.com/products/distribution
+
+1.2. 根据您的操作系统选择合适的版本（Windows、macOS或Linux）进行下载。
+
+1.3. 双击下载的安装包，然后按照安装向导的提示进行安装。
+
+2. 打开 Anaconda Navigator
+2.1. 安装完毕后，在您的应用程序列表中找到并启动Anaconda Navigator。
+
+2.2. 在Anaconda Navigator的主界面上，您可以看到多个应用，如Jupyter Notebook、Spyder等。
+
+3. 启动 Jupyter Notebook
+3.1. 在Anaconda Navigator的主界面上，点击Jupyter Notebook的Launch按钮。
+
+3.2. Jupyter Notebook会在您的默认浏览器中打开，并显示您电脑上的文件目录。
+
+4. 创建一个新的 Notebook
+4.1. 在Jupyter Notebook的右上方，点击New，然后选择Python 3。
+
+4.2. 这将会在一个新的标签页中打开一个空白的notebook。
+
+5. 如果您已经有我提供的代码，只需要打开名为VirtualCP.ipynb的代码，即可直接运行。
+请确保您的Python环境已经安装了以下库：
+
+numpy
+pandas
+matplotlib
+seaborn
+logging
+（以上在我的代码中已经为您自动安装）
+修改脚本中的文件路径 filename 以指向您的 CSV 文件。
+代码中C:/Users/TP/Documents/CQ6248.1-01.csv的路径为C盘-文档中名为CQ6248.1-01.csv的文件
+
+
+解释第一段代码的主要功能：
+
+加载数据 (load_data 函数)
+
+从指定的 CSV 文件中加载数据。
+处理文件错误并记录日志。
+验证并删除重复值 (validate_and_remove_duplicates 函数)
+
+在数据框中验证并删除重复的行。
+应用公式 (apply_formula 函数)
+
+对数据框中的 'Y' 列应用特定公式。
+翻转X坐标 (flip_x_coordinates 函数)
+
+根据中心X坐标翻转数据框中的X坐标。
+调整坐标 (adjust_coordinates 函数)
+
+对数据框中的坐标应用偏移量。
+查找空洞 (find_all_holes 函数)
+
+在网格中查找缺失的坐标点。
+数据可视化 (visualize_data 函数)
+
+根据 PF 列绘制散点图。
+从数据框生成TXT文件 (generate_txt_from_df 函数)
+
+将处理后的数据导出为 TXT 格式。
+查找第一个洞及其周围 (find_first_hole_and_surroundings 函数)
+
+在网格中查找第一个洞及其周围的坐标。
+计算失败、通过和测试的总数
+
+计算失败的总数、通过的总数以及测试的总数。
+
+
+之后的代码都有具体的注释。
+
+注意事项
+默认的文件名和路径是硬编码的，因此在使用前，请确保更改它们以指向正确的位置。
+若需要应用其他公式或调整参数，请直接修改脚本中相应的部分。
+为了避免数据丢失，脚本默认会生成新的TXT文件，而不是覆盖原始文件。
+
+设计思路请参考：https://trello.com/b/zZcCujs8/virtual-cp-work-planner-week12
+如有疑问，请联系微信：hyzauwithu
+最后，祝您使用愉快！
