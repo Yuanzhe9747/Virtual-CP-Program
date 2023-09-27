@@ -3,6 +3,7 @@ This is a project I was in charge of during my internship. Its primary focus was
 Due to the confidentiality agreement I signed with the company, I can only disclose some of the initial code
 
 Introduction
+
 This script is a data processing and analysis tool, primarily designed for handling specific formats of CSV files. The tool can read data from the file, apply particular formulas, flip coordinates, identify missing data points, and visualize the processed data.
 
 Pre-requisites Before Using
